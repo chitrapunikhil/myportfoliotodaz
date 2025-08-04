@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Chitrapu - Professional Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6; 
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .hero { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+            padding: 100px 0; 
+            text-align: center; 
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 700; }
+        .hero p { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.9; }
+        .btn { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            background: #fff; 
+            color: #667eea; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            margin: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .section { padding: 80px 0; }
+        .section:nth-child(even) { background: #f8f9fa; }
+        .section h2 { 
+            text-align: center; 
+            font-size: 2.5rem; 
+            margin-bottom: 50px; 
+            color: #333;
+        }
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            gap: 30px; 
+            margin-top: 40px; 
+        }
+        .skill-card { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .skill-card:hover { transform: translateY(-5px); }
+        .skill-card h3 { color: #667eea; margin-bottom: 20px; font-size: 1.5rem; }
+        .skill-item { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 15px; 
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .experience-card { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .experience-card h3 { color: #667eea; font-size: 1.8rem; margin-bottom: 10px; }
+        .experience-card .company { color: #666; font-size: 1.1rem; margin-bottom: 20px; }
+        .experience-card ul { margin-left: 20px; }
+        .experience-card li { margin-bottom: 10px; }
+        .contact { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+            text-align: center; 
+            padding: 80px 0;
+        }
+        .contact-info { 
+            display: flex; 
+            justify-content: center; 
+            gap: 40px; 
+            margin-top: 40px; 
+            flex-wrap: wrap; 
+        }
+        .contact-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            font-size: 1.1rem;
+        }
+        .contact-item a { color: white; text-decoration: none; }
+        .contact-item a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .contact-info { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Nikhil Chitrapu</h1>
+            <p>Engineering & Digital Marketing Professional | AI Generalist</p>
+            <p>Transforming Technical Expertise into Digital Success with AI-Powered Efficiency</p>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="mailto:nikhilchitrapu193@gmail.com" class="btn">Schedule Interview</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🎯 Technical Skills</h3>
+                    <div class="skill-item">
+                        <span>Project Management (PRINCE2®)</span>
+                        <strong>95%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>Scrum Master (PeopleCert®)</span>
+                        <strong>95%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>Meta Ads & Social Media Marketing</span>
+                        <strong>88%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>AutoCAD & SolidWorks</span>
+                        <strong>85%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python & SQL</span>
+                        <strong>75%</strong>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>🤖 AI Generalist Skills</h3>
+                    <div class="skill-item">
+                        <span>AI-Powered Process Optimization</span>
+                        <strong>85%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>Machine Learning Applications</span>
+                        <strong>80%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>AI Tools Integration</span>
+                        <strong>90%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>Data Analysis & Insights</span>
+                        <strong>82%</strong>
+                    </div>
+                    <div class="skill-item">
+                        <span>Automated Workflow Design</span>
+                        <strong>88%</strong>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>🏆 Certifications</h3>
+                    <div style="text-align: left;">
+                        <p style="margin-bottom: 15px;"><strong>PRINCE2® Specialist</strong><br>Lecturio GmbH (2025)</p>
+                        <p style="margin-bottom: 15px;"><strong>PeopleCert® Scrum Master I</strong><br>PeopleCert® (2025)</p>
+                        <p style="margin-bottom: 15px;"><strong>Mechanical Engineering</strong><br>JNTU Hyderabad (2015)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-card">
+                <h3>Social Media Marketing Professional</h3>
+                <div class="company">Concentrix-Meta | Nov 2023 - Oct 2024 | Berlin, Germany</div>
+                <ul>
+                    <li>Transitioned from SBG to GBG clients in 6 months, demonstrating rapid adaptability</li>
+                    <li>Improved campaign performance by 25% through strategic optimization</li>
+                    <li>Maintained 95%+ client satisfaction rates across 50+ accounts</li>
+                    <li>Trained team members on best practices, improving overall efficiency</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h3>Junior Engineer</h3>
+                <div class="company">MS Agarwal Foundries Pvt Ltd | Mar 2019 - Sep 2022 | Hyderabad, India</div>
+                <ul>
+                    <li>Implemented Thermex Quenching System technology in steel manufacturing</li>
+                    <li>Improved production efficiency by 15% through process optimization</li>
+                    <li>Maintained ISO 9001:2015 and OHSAS 18001:2007 compliance</li>
+                    <li>Reduced project risks by 20% through effective communication</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Ready to bring engineering precision, digital marketing expertise, and AI-powered efficiency to your team</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:nikhilchitrapu193@gmail.com">nikhilchitrapu193@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <a href="tel:+4915510877211">+49 15510877211</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Berlin, Germany</span>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://linkedin.com/in/nikhilchitrapu" target="_blank">LinkedIn Profile</a>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <a href="mailto:nikhilchitrapu193@gmail.com" class="btn">Schedule Interview</a>
+                <a href="tel:+4915510877211" class="btn">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: #333; color: white; text-align: center; padding: 30px;">
+        <div class="container">
+            <p>&copy; 2025 Nikhil Chitrapu. Professional Portfolio designed for maximum impact.</p>
+        </div>
+    </footer>
+</body>
+</html>
